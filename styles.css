@@ -16,7 +16,7 @@ body, html {
 
 .opener {
     background-color: #1F2937;
-    height: 50%;
+    height: 48%;
     padding: 8px 4%;
 }
 
@@ -70,6 +70,7 @@ body, html {
 .placeholder {
     flex: 1;
     min-width: 200px;
+    max-width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +89,43 @@ body, html {
     font-weight: 900;
 }
 
+.info {
+    height: 35%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-text {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.box {
+    margin-top: 20px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    padding: 60px;
+    max-width: 90px;
+}
+
+.box-text {
+    font-size: 14px;
+    max-width: 120px;
+    text-align: center;
+    color: #1F2937;
+    margin-top: 5PX;
+}
+
 @media (max-width: 768px) {
     .hero .hero-title {
         font-size: 24px;
@@ -95,9 +133,19 @@ body, html {
 
     .hero {
         flex-direction: column;
+        gap: 20px;
     }
 
     .hero-content, .placeholder {
         width: 100%;
+    }
+}
+
+@media (min-width: 1660px) {
+    .opener {
+        height: 58%;
+    }
+    .placeholder {
+        max-width: 40%;
     }
 }
